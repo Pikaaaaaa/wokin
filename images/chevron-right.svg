@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-4673.481 -6381.414 21.329 32.828">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #666565;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="keyboard-right-arrow-button_4_" data-name="keyboard-right-arrow-button (4)" transform="translate(-4730.717 -6380)">
+    <g id="chevron-right" transform="translate(58.65)">
+      <path id="Path_2552" data-name="Path 2552" class="cls-1" d="M62.15,0l-3.5,3.5L70.15,15,58.65,26.5l3.5,3.5,15-15Z" transform="translate(-58.65)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.936 24.002">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="shopping-cart_7_" data-name="shopping-cart (7)" transform="translate(0 -19.114)">
+    <g id="Group_295" data-name="Group 295" transform="translate(8.594 38.552)">
+      <g id="Group_294" data-name="Group 294" transform="translate(0 0)">
+        <path id="Path_1440" data-name="Path 1440" class="cls-1" d="M171.937,402.828a2.281,2.281,0,1,0,2.281,2.281A2.284,2.284,0,0,0,171.937,402.828Zm0,3.288a1.007,1.007,0,1,1,1.007-1.007A1.009,1.009,0,0,1,171.937,406.116Z" transform="translate(-169.656 -402.828)"/>
+      </g>
+    </g>
+    <g id="Group_297" data-name="Group 297" transform="translate(16.595 38.552)">
+      <g id="Group_296" data-name="Group 296" transform="translate(0 0)">
+        <path id="Path_1441" data-name="Path 1441" class="cls-1" d="M329.882,402.828a2.281,2.281,0,1,0,2.281,2.281A2.284,2.284,0,0,0,329.882,402.828Zm0,3.288a1.007,1.007,0,1,1,1.007-1.007A1.009,1.009,0,0,1,329.882,406.116Z" transform="translate(-327.601 -402.828)"/>
+      </g>
+    </g>
+    <g id="Group_299" data-name="Group 299" transform="translate(9.675 26.542)">
+      <g id="Group_298" data-name="Group 298" transform="translate(0 0)">
+        <path id="Path_1442" data-name="Path 1442" class="cls-1" d="M200.759,165.755h-9.126a.637.637,0,0,0,0,1.274h9.126a.637.637,0,0,0,0-1.274Z" transform="translate(-190.996 -165.755)"/>
+      </g>
+    </g>
+    <g id="Group_301" data-name="Group 301" transform="translate(10.172 29.849)">
+      <g id="Group_300" data-name="Group 300" transform="translate(0 0)">
+        <path id="Path_1443" data-name="Path 1443" class="cls-1" d="M209.571,231.035h-8.132a.637.637,0,0,0,0,1.274h8.132a.637.637,0,0,0,0-1.274Z" transform="translate(-200.802 -231.035)"/>
+      </g>
+    </g>
+    <g id="Group_303" data-name="Group 303" transform="translate(0 19.114)">
+      <g id="Group_302" data-name="Group 302" transform="translate(0 0)">
+        <path id="Path_1444" data-name="Path 1444" class="cls-1" d="M25.649,23.705a1.268,1.268,0,0,0-.987-.469H4.826l-.4-1.945a1.275,1.275,0,0,0-.74-.911L.89,19.167a.637.637,0,0,0-.507,1.168l2.8,1.213L6.259,36.505a1.278,1.278,0,0,0,1.247,1.017H22.763a.637.637,0,1,0,0-1.274H7.507l-.375-1.819H22.881a1.278,1.278,0,0,0,1.247-1.017l1.781-8.646A1.269,1.269,0,0,0,25.649,23.705Zm-2.768,9.45H6.87L5.089,24.51H24.662Z" transform="translate(0 -19.114)"/>
+      </g>
+    </g>
+  </g>
+</svg>

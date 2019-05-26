@@ -1,0 +1,1880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <![endif]-->
+    <title>Wokin</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="google-site-verification" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="icon" href="images/fav.png" type="image/png" sizes="16x16">
+
+    <!--Plugins-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="plugins/mdl/material.min.css">
+    <link rel="stylesheet" href="plugins/mdl-select/getmdl-select.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+    <link href="plugins/bootstrap-4.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="plugins/animatecss/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="plugins/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="plugins/bootstrap-select/dist/css/bootstrap-select.css">
+    <link rel="stylesheet" href="plugins/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!--Custom Css-->
+    <link href="styles/css/style-en.css" rel="stylesheet">
+
+</head>
+
+<body class="site">
+   
+    <div class="select-distinct-modal modal fade" id="select-distinct-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title text-center modal--title-product">
+                        choose the district
+                    </h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="mdl-textfield mdl-js-textfield getmdl-select">
+                        <input type="text" class="mdl-textfield__input" id="districtSelector" readonly>
+                        <input type="hidden" value="" name="districtSelector">
+                        <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                        <label for="districtSelector" class="mdl-textfield__label">
+                            Address
+                        </label>
+                        <ul for="districtSelector" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                            <li class="mdl-menu__item district">Vake</li>
+                            <li class="mdl-menu__item district">Gldani</li>
+                            <li class="mdl-menu__item district">Mukhiani</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- select-distinct-modal -->
+   
+   
+    <div class="ingredients__body-overlay bg-white position-fixed d-none">
+        <div class="product__header position-fixed text-center">
+            <h1 class="product__header-title">
+                japanese pan noodles
+            </h1>
+            <span class="product__price product__price--inner d-block">10.50</span>
+            <a href="#" class="ingredients__body-overlay-close position-absolute">
+               <img src="images/close--red.png" alt="close">
+            </a>
+        </div>
+        <div class="product__content text-center">
+            <div class="content__section-title-holder content__section-title-holder--inner">
+                <h3 class="content__section-title">
+                    main ingredient
+                </h3>
+            </div>
+            <ul class="main-ingredients">
+                <li class="main-ingredients__item d-inline-block">
+                    <input type="checkbox" class="ingredients-overlay__item-control d-none" id="ingredients-overlay__item-control-1">
+                    <label for="ingredients-overlay__item-control-1" class="ingredients__item">
+                        <span class="main-ingredients__product">
+                            <span>fish</span>
+                        </span>
+                        <span class="product__price product__price--ingredients-price">
+                            13.50
+                        </span>
+                    </label>
+                </li>
+                <li class="main-ingredients__item d-inline-block">
+                    <input type="checkbox" class="ingredients-overlay__item-control d-none" id="ingredients-overlay__item-control-2">
+                    <label for="ingredients-overlay__item-control-2" class="ingredients__item">
+                        <span class="main-ingredients__product">
+                            <span>chicken</span>
+                        </span>
+                        <span class="product__price product__price--ingredients-price">
+                            13.50
+                        </span>
+                    </label>
+                </li>
+                <li class="main-ingredients__item d-inline-block">
+                    <input type="checkbox" class="ingredients-overlay__item-control d-none" id="ingredients-overlay__item-control-3">
+                    <label for="ingredients-overlay__item-control-3" class="ingredients__item">
+                        <span class="main-ingredients__product">
+                            <span>beef</span>
+                        </span>
+                        <span class="product__price product__price--ingredients-price">
+                            13.50
+                        </span>
+                    </label>
+                </li>
+            </ul>
+            <div class="more-ingredients">
+                <div class="container">
+                    <div class="content__section-title-holder content__section-title-holder--inner">
+                        <h3 class="content__section-title">
+                            add more
+                        </h3>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-3 additional-ingredient">
+                            <input type="checkbox" class="ingredients-additional__item-control d-none" id="ingredients-additional__item-control-1">
+                            <label for="ingredients-additional__item-control-1" class="ingredients__item">
+                                <span class="ingredients__item-image-container ingredients__item-image-container--additional d-flex flex-column justify-content-center align-items-center">
+                                    <img src="images/additional-ingredients-mushroom.png" alt="ingredient" width="100" height="100" class="ingredients__item-image">
+                                </span>
+                                <span class="ingredients__item-title ingredients__item-title--additional">
+                                    mushroom
+                                </span>
+                                <span class="ingredients__item-weight">
+                                    50 g
+                                </span>
+                                <span class="product__price">
+                                    + 1.50
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-3 additional-ingredient">
+                            <input type="checkbox" class="ingredients-additional__item-control d-none" id="ingredients-additional__item-control-2">
+                            <label for="ingredients-additional__item-control-2" class="ingredients__item">
+                                <span class="ingredients__item-image-container ingredients__item-image-container--additional d-flex flex-column justify-content-center align-items-center">
+                                    <img src="images/additional-ingredients-cheese.png" alt="ingredient" width="100" height="100" class="ingredients__item-image">
+                                </span>
+                                <span class="ingredients__item-title ingredients__item-title--additional">
+                                    cheese
+                                </span>
+                                <span class="ingredients__item-weight">
+                                    50 g
+                                </span>
+                                <span class="product__price">
+                                    + 1.50
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-3 additional-ingredient">
+                            <input type="checkbox" class="ingredients-additional__item-control d-none" id="ingredients-additional__item-control-3">
+                            <label for="ingredients-additional__item-control-3" class="ingredients__item">
+                                <span class="ingredients__item-image-container ingredients__item-image-container--additional d-flex flex-column justify-content-center align-items-center">
+                                    <img src="images/additional-ingredients-champignon.png" alt="ingredient" width="100" height="100" class="ingredients__item-image">
+                                </span>
+                                <span class="ingredients__item-title ingredients__item-title--additional">
+                                    champignon
+                                </span>
+                                <span class="ingredients__item-weight">
+                                    50 g
+                                </span>
+                                <span class="product__price">
+                                    + 1.50
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-3 additional-ingredient">
+                            <input type="checkbox" class="ingredients-additional__item-control d-none" id="ingredients-additional__item-control-4">
+                            <label for="ingredients-additional__item-control-4" class="ingredients__item">
+                                <span class="ingredients__item-image-container ingredients__item-image-container--additional d-flex flex-column justify-content-center align-items-center">
+                                    <img src="images/additional-ingredients-broccoli.png" alt="ingredient" width="100" height="100" class="ingredients__item-image">
+                                </span>
+                                <span class="ingredients__item-title ingredients__item-title--additional">
+                                    broccoli
+                                </span>
+                                <span class="ingredients__item-weight">
+                                    50 g
+                                </span>
+                                <span class="product__price">
+                                    + 1.50
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-3 additional-ingredient">
+                            <input type="checkbox" class="ingredients-additional__item-control d-none" id="ingredients-additional__item-control-5">
+                            <label for="ingredients-additional__item-control-5" class="ingredients__item">
+                                <span class="ingredients__item-image-container ingredients__item-image-container--additional d-flex flex-column justify-content-center align-items-center">
+                                    <img src="images/additional-ingredients-avocado.png" alt="ingredient" width="100" height="100" class="ingredients__item-image">
+                                </span>
+                                <span class="ingredients__item-title ingredients__item-title--additional">
+                                    avocado
+                                </span>
+                                <span class="ingredients__item-weight">
+                                    50 g
+                                </span>
+                                <span class="product__price">
+                                    + 1.50
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-3 additional-ingredient">
+                            <input type="checkbox" class="ingredients-additional__item-control d-none" id="ingredients-additional__item-control-6">
+                            <label for="ingredients-additional__item-control-6" class="ingredients__item">
+                                <span class="ingredients__item-image-container ingredients__item-image-container--additional d-flex flex-column justify-content-center align-items-center">
+                                    <img src="images/additional-ingredients-tomato.png" alt="ingredient" width="100" height="100" class="ingredients__item-image">
+                                </span>
+                                <span class="ingredients__item-title ingredients__item-title--additional">
+                                    tomato
+                                </span>
+                                <span class="ingredients__item-weight">
+                                    50 g
+                                </span>
+                                <span class="product__price">
+                                    + 1.50
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product__desc">
+                <div class="content__section-title-holder content__section-title-holder--inner">
+                    <h3 class="content__section-title">
+                        ingredients
+                    </h3>
+                </div>
+                <p class="product__text product__text--inner">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                </p>
+                <ul class="product__ingredients">
+                    <li class="clearfix">
+                        <span class="d-inline-block float-left">
+                            Calories
+                        </span>
+                        <span class="d-inline-block"> - </span>
+                        <span class="d-inline-block float-right">
+                            185 kcal
+                        </span>
+                    </li>
+                    <li>
+                        <span class="d-inline-block float-left">
+                            Carbohydrate
+                        </span>
+                        <span class="d-inline-block"> - </span>
+                        <span class="d-inline-block float-right">
+                            1.1 g
+                        </span>
+                    </li>
+                    <li>
+                        <span class="d-inline-block float-left">
+                            Protein 
+                        </span>
+                        <span class="d-inline-block"> - </span>
+                        <span class="d-inline-block float-right">
+                            0.5 g
+                        </span>
+                    </li>
+                    <li>
+                        <span class="d-inline-block float-left">
+                            Fat
+                        </span>
+                        <span class="d-inline-block"> - </span>
+                        <span class="d-inline-block float-right">
+                            0.3 g
+                        </span>
+                    </li>
+                    <li>
+                        <span class="d-inline-block float-left">
+                            Fibre
+                        </span>
+                        <span class="d-inline-block"> - </span>
+                        <span class="d-inline-block float-right">
+                             0 g
+                        </span>
+                    </li>
+                </ul>
+                <div class="product__desc-image-holder">
+                    <img src="images/product-inner__product.png" alt="product">
+                </div>
+            </div>
+        </div>
+        <div class="product__footer position-fixed text-center">
+            <div class="product__footer-top">
+                <h3 class="product__header-title product__header-title--footer">
+                    japanese pan noodles + add-ons
+                    <span class="d-inline-block product__price">
+                        13.50
+                    </span>
+                </h3>
+            </div>
+            <div class="product__footer-bottom">
+                <button class="btn btn--default btn--products btn--red btn--products-inner">
+                    add to cart
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="auth-login" class="auth d-none">
+        <div class="container text-center">
+            <div class="auth__top cleafix position-relative">
+                <h3 class="auth__title">
+                    sign in
+                </h3>
+                <a href="#" class="auth__close position-absolute">
+                   <img src="images/close--red.png" alt="close">
+                </a>
+            </div>
+            <form action="#" class="auth__form clearfix">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label d-block auth__input-holder">
+                    <input type="email" id="email-login" class="mdl-textfield__input mdl-text-field__input--auth d-block">
+                    <label for="email-login" class="mdl-textfield__label">E-mail</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label d-block auth__input-holder">
+                    <input type="password" id="password-login" class="mdl-textfield__input mdl-text-field__input--auth d-block">
+                    <label for="password-login" class="mdl-textfield__label">Password</label>
+                </div>
+                <a href="#" class="d-block auth__recover-password float-right">Forgot Password?</a>
+
+                <div class="d-flex align-items-center justify-content-between auth__sign-in">
+                    <button class="btn btn--auth">
+                       sign in
+                   </button>
+                    <a href="#" class="auth__register auth-toggle" data-target="#auth-register">register</a>
+                </div>
+                <div class="content__section-title-holder content__section-title-holder--auth">
+                    <h3 class="content__section-title content__section-title--auth">
+                        or
+                    </h3>
+                </div>
+                <button class="btn btn--auth btn--fb-auth">
+                       login with facebook
+                </button>
+            </form>
+        </div>
+    </div>
+    <div id="auth-register" class="auth d-none">
+        <div class="container text-center">
+            <div class="auth__top cleafix position-relative">
+                <h3 class="auth__title">
+                    register
+                </h3>
+                <a href="#" class="auth__close position-absolute">
+                   <img src="images/close--red.png" alt="close">
+                </a>
+            </div>
+            <form action="#" class="auth__form clearfix">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label d-block auth__input-holder">
+                    <input type="text" id="name" class="mdl-textfield__input mdl-text-field__input--auth d-block">
+                    <label for="name" class="mdl-textfield__label">First Name</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label d-block auth__input-holder">
+                    <input type="text" id="surname" class="mdl-textfield__input mdl-text-field__input--auth d-block">
+                    <label for="surname" class="mdl-textfield__label">Last Name</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label d-block auth__input-holder">
+                    <input type="tel" id="tel" class="mdl-textfield__input mdl-text-field__input--auth d-block" pattern="[0-9]">
+                    <label for="tel" class="mdl-textfield__label">Mobile Number</label>
+                    <span class="mdl-textfield__error">Numbers only</span>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label d-block auth__input-holder">
+                    <input type="email" id="email" class="mdl-textfield__input mdl-text-field__input--auth d-block">
+                    <label for="email" class="mdl-textfield__label">E-mail</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label d-block auth__input-holder">
+                    <input type="password" id="password-reg" class="mdl-textfield__input mdl-text-field__input--auth d-block">
+                    <label for="password-reg" class="mdl-textfield__label">Password</label>
+                </div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label d-block auth__input-holder">
+                    <input type="password" id="password-reg-repeat" class="mdl-textfield__input mdl-text-field__input--auth d-block">
+                    <label for="password-reg-repeat" class="mdl-textfield__label">Password</label>
+                </div>
+                <div class="d-flex align-items-center justify-content-between auth__sign-in">
+                    <button class="btn btn--auth">
+                       register
+                   </button>
+                    <a href="#" class="auth__register auth-toggle" data-target="#auth-login">sign in</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="cart position-fixed bg-white d-none">
+        <div class="cart__top clearfix d-flex align-items-center">
+            <h3 class="district-title">
+                Vake district
+            </h3>
+            <button class="btn btn--transparent" data-toggle="modal" data-target="#select-distinct-modal">
+                change
+            </button>
+            <a href="#" class="cart__top-close d-inline-block">
+               <img src="images/close--red.png" alt="close">
+            </a>
+        </div>
+        <div class="cart__content">
+            <div class="cart__content-product">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-4 text-left">
+                            <img src="images/cart__sushi.png" alt="sushi" class="cart__content-product-image">
+                        </div>
+                        <div class="col-4">
+                            <h4 class="cart__content-product-title">
+                                green dragon
+                            </h4>
+                            <ul class="additional-ingredients">
+                                <li class="additional-ingredients__item position-relative">
+                                    chicken
+                                </li>
+                                <li class="additional-ingredients__item position-relative">
+                                    cheese
+                                </li>
+                                <li class="additional-ingredients__item position-relative">
+                                    broccoli
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <div class="counter d-flex align-items-center">
+                                <div class="counter__item-amount counter__item-amount--minus d-inline-block"></div>
+                                <input type="text" value="4" class="counter__amount-control d-inline-block">
+                                <div class="counter__item-amount counter__item-amount--plus d-inline-block"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart__content-item-bottom text-center d-flex align-items-center">
+                    <div class="cart__item-control cart__item-control--small cart__item-control--delete d-inline-block text-uppercase">
+                        <a href="#" class="d-block">delete</a>
+                    </div>
+                    <div class="cart__item-control cart__item-control--small cart__item-control--edit d-inline-block text-uppercase">
+                        <a href="#" class="d-block">edit</a>
+                    </div>
+                    <div class="cart__item-control cart__item-control--big d-inline-block text-uppercase">
+                        <span class="product__price">
+                            35.40
+                        </span>
+                    </div>
+                </div>
+                <div class="cart__item-del-confirm text-center align-items-center d-none">
+                    <div class="cart__item-control d-inline-block text-uppercase cart__item-control--big cart__item-control--check">
+                        are you sure?
+                    </div>
+                    <div class="cart__item-control cart__item-control-confirm-delete d-inline-block text-uppercase cart__item-control--small">
+                        <a href="#" class="d-block">yes</a>
+                    </div>
+                    <div class="cart__item-control cart__item-control-confirm-no d-inline-block text-uppercase cart__item-control--small">
+                        <a href="#" class="d-block">no</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cart__content-product">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-4 text-left">
+                            <img src="images/cart__sushi.png" alt="sushi" class="cart__content-product-image">
+                        </div>
+                        <div class="col-4">
+                            <h4 class="cart__content-product-title">
+                                green dragon4
+                            </h4>
+                            <ul class="additional-ingredients">
+                                <li class="additional-ingredients__item position-relative">
+                                    chicken
+                                </li>
+                                <li class="additional-ingredients__item position-relative">
+                                    cheese
+                                </li>
+                                <li class="additional-ingredients__item position-relative">
+                                    broccoli
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <div class="counter d-flex align-items-center">
+                                <div class="counter__item-amount counter__item-amount--minus d-inline-block"></div>
+                                <input type="text" value="4" class="counter__amount-control d-inline-block">
+                                <div class="counter__item-amount counter__item-amount--plus d-inline-block"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart__content-item-bottom text-center d-flex align-items-center">
+                    <div class="cart__item-control cart__item-control--small cart__item-control--delete d-inline-block text-uppercase">
+                        <a href="#" class="d-block">delete</a>
+                    </div>
+                    <div class="cart__item-control cart__item-control--small cart__item-control--edit d-inline-block text-uppercase">
+                        <a href="#" class="d-block">edit</a>
+                    </div>
+                    <div class="cart__item-control cart__item-control--big d-inline-block text-uppercase">
+                        <span class="product__price">
+                            35.40
+                        </span>
+                    </div>
+                </div>
+                <div class="cart__item-del-confirm text-center align-items-center d-none">
+                    <div class="cart__item-control d-inline-block text-uppercase cart__item-control--big cart__item-control--check">
+                        are you sure?
+                    </div>
+                    <div class="cart__item-control cart__item-control--confirm-delete d-inline-block text-uppercase cart__item-control--small cart__item-control-confirm-delete">
+                        <a href="#" class="d-block">yes</a>
+                    </div>
+                    <div class="cart__item-control cart__item-control-confirm-no d-inline-block text-uppercase cart__item-control--small">
+                        <a href="#" class="d-block">no</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart__footer text-center position-fixed">
+            <div class="cart__footer-top">
+                <span class="cart__product-price">
+                    total 
+                    <span class="d-inline-block price-spacing"> - </span> 
+                    <span class="product__price product__price--cart">70.80</span></span>
+            </div>
+            <div class="cart__footer-bottom">
+                <button class="btn--red btn cart__footer-order">
+                    <img src="images/white-cart.svg" alt="cart" class="cart__footer-order-icon">
+                    order
+                </button>
+            </div>
+        </div>
+    </div>
+    <header class="site__header">
+        <div class="header">
+            <div class="header__top">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-4 d-none d-lg-inline-block">
+                            <div class="header__el d-inline-block">
+                                <img src="images/phone.svg" alt="phone" class="header__el-icon d-inline-block">
+                                <a href="tel:+995 (032) 2 13 14 15" class="header__el-text d-inline-block">
+                                    +995 (032) 2 13 14 15
+                                </a>
+                            </div>
+                            <div class="header__el d-inline-block">
+                                <img src="images/clock.svg" alt="clock" class="header__el-icon d-inline-block">
+                                <span class="header__el-text d-inline-block">
+                                    11:00 - 12:00
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-4 d-block d-lg-none">
+                            <div class="header__el d-inline-block">
+                                <a href="#" class="d-block auth-toggle" data-target="#auth-login">
+                                    <img src="images/user.svg" alt="sign in" class="header__el-icon d-inline-block">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-4 text-center">
+                            <div class="header__logo">
+                                <h1>
+                                    <a href="#">
+                                        <img src="images/logo.svg" alt="wokin" height="45" width="125" class="img-fluid">
+                                    </a>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="col-4 d-block d-lg-none text-right">
+                            <a href="#" class="d-inline-block header__el header__el--cart">
+                                <img src="images/cart.svg" alt="cart" class="header__el-icon d-inline-block">
+                                <span class="header__el-text--badge d-inline-block text-center">
+                                    2
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-4 text-right d-none d-lg-inline-block">
+                            <div class="header__el d-inline-block">
+                                <a href="#" class="d-block">
+                                    <img src="images/global.svg" alt="language" class="header__el-icon d-inline-block">
+                                    <span class="d-inline-block header__el-text">ENG</span>
+                                </a>
+                            </div>
+                            <div class="header__el d-inline-block">
+                                <a href="#" class="d-block auth-toggle" data-target="#auth-login">
+                                    <img src="images/user.svg" alt="sign in" class="header__el-icon d-inline-block">
+                                    <span class="d-inline-block header__el-text">SIGN IN</span>
+                                </a>
+                            </div>
+                            <a href="#" class="d-inline-block header__el header__el--cart">
+                                <img src="images/cart.svg" alt="cart" class="header__el-icon d-inline-block">
+                                <span class="header__el-text--badge d-inline-block text-center">
+                                    2
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__bottom">
+                <div class="container clearfix">
+                    <div class="overlay-nav d-none">
+                        <div class="container">
+                            <div class="overlay-nav__header clearfix pb-30">
+                                <div class="overlay-nav__lang float-left">
+                                    <img src="images/global.svg" alt="language" class="header__el-icon d-inline-block">
+                                    <a href="#" class="d-inline-block header__el-text header__el-text--overlay-nav">
+                                        eng
+                                    </a>
+                                    <a href="#" class="d-inline-block header__el-text header__el-text--overlay-nav">
+                                        rus
+                                    </a>
+                                    <a href="#" class="d-inline-block header__el-text header__el-text--overlay-nav">
+                                        geo
+                                    </a>
+                                </div>
+                                <img src="images/close--red.png" alt="close" class="d-inline-block overlay-nav__close float-right">
+                            </div>
+                            <div class="overlay-nav__content">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="overlay-nav-toggle float-left d-inline-block d-lg-none">
+                        <img src="images/burger.svg" alt="bars" class="header__el-icon">
+                    </div>
+                    <div class="row align-items-center clearfix">
+                        <div class="col-lg-7">
+                            <nav class="menu menu--header d-none d-lg-block">
+                                <a href="#section-sushi" class="menu__item">sushi</a>
+                                <a href="#section-noodles" class="menu__item">noodles</a>
+                                <a href="#soups" class="menu__item">soups</a>
+                                <a href="#drinks" class="menu__item">drinks</a>
+                            </nav>
+                        </div>
+                        <div class="col-lg-5 text-right float-right">
+                            <a class="header__ingredient-list d-inline-block" href="#">
+                                <img src="images/chef.svg" alt="chef" class="header__ingredient-list-icon">
+                                <h3 class="header__ingredient-list-title d-none d-lg-inline-block">choose by ingredient</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="site__content">
+        <div class="content">
+            <div class="ingredients-overlay text-center">
+                <div class="ingredients__top position-relative pt-30">
+                    <h3 class="ingredients__title">
+                        products with
+                    </h3>
+                    <a href="#" class="ingredients__close position-absolute">
+                       <img src="images/close--red.png" alt="close">
+                    </a>
+                </div>
+                <div class="ingredients-carousel ingredients owl-carousel owl-theme text-center">
+                    <div class="item">
+                        <input type="checkbox" class="ingredients__item-control d-none" id="ingredients__item-control-1">
+                        <label for="ingredients__item-control-1" class="ingredients__item">
+                            <span class="ingredients__item-image-container d-flex flex-column justify-content-center align-items-center">
+                                <img src="images/product-1.png" width="48" height="48" alt="" class="ingredients__item-image">
+                            </span>
+                            <span class="ingredients__item-title">chicken</span>
+                        </label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" class="ingredients__item-control d-none" id="ingredients__item-control-2">
+                        <label for="ingredients__item-control-2" class="ingredients__item">
+                            <span class="ingredients__item-image-container d-flex flex-column justify-content-center align-items-center">
+                                <img src="images/product-2.png" width="48" height="48" alt="" class="ingredients__item-image">
+                            </span>
+                            <span class="ingredients__item-title">meat</span>
+                        </label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" class="ingredients__item-control d-none" id="ingredients__item-control-3">
+                        <label for="ingredients__item-control-3" class="ingredients__item">
+                            <span class="ingredients__item-image-container d-flex flex-column justify-content-center align-items-center">
+                                <img src="images/product-3.png" width="48" height="48" alt="" class="ingredients__item-image">
+                            </span>
+                            <span class="ingredients__item-title">fish</span>
+                        </label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" class="ingredients__item-control d-none" id="ingredients__item-control-4">
+                        <label for="ingredients__item-control-4" class="ingredients__item ingredients__item-title">
+                            <span class="ingredients__item-image-container d-flex flex-column justify-content-center align-items-center">
+                                <img src="images/product-4.png" width="48" height="48" alt="" class="ingredients__item-image">
+                            </span>
+                            <span class="ingredients__item-title">cheese</span>
+                        </label>
+                    </div>
+                    <div class="item">
+                        <input type="checkbox" class="ingredients__item-control d-none" id="ingredients__item-control-5">
+                        <label for="ingredients__item-control-5" class="ingredients__item ingredients__item-title">
+                            <span class="ingredients__item-image-container d-flex flex-column justify-content-center align-items-center">
+                                <img src="images/product-5.png" width="48" height="48" alt="" class="ingredients__item-image">
+                            </span>
+                            <span class="ingredients__item-title">vegetarian</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="content__slide text-center" style="background-image:url(uploads/slide-1.png)">
+                <h2 class="content__slide-title">
+                    asian food for every mind
+                </h2>
+                <h4 class="content__slide-subtitle">
+                    choose, order and recieve
+                </h4>
+            </div>
+            <section class="content__section" id="section-sushi">
+                <div class="container text-center">
+                    <div class="content__section-title-holder">
+                        <h3 class="content__section-title">
+                            sushi
+                        </h3>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-md-6 col-lg-4 product">
+                            <div class="product__overlay">
+                                <h4 class="product__title">
+                                    onion roll
+                                </h4>
+                                <h5 class="product__subtitle">
+                                    with new style
+                                </h5>
+                                <span class="d-block product__price">
+                                    10.00
+                                </span>
+                                <div class="content__section-title-holder">
+                                    <h3 class="content__section-title content__section-title--product">
+                                        ingredients
+                                    </h3>
+                                </div>
+                                <p class="product__text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                </p>
+                                <ul class="product__ingredients">
+                                    <li class="clearfix">
+                                        <span class="d-inline-block float-left">
+                                            Calories
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            185 kcal
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Carbohydrate
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            1.1 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Protein 
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            0.5 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Fat
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            0.3 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Fibre
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                             0 g
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="product__inner">
+                                <img src="uploads/green-dragon-1.png" class="product__image" alt="sushi">
+                                <h4 class="product__title">
+                                    green dragon
+                                </h4>
+                                <h5 class="product__subtitle">
+                                    with new style
+                                </h5>
+                                <span class="d-block product__price">
+                                    10.00
+                                </span>
+
+                                <button class="btn btn--default btn--products" data-toggle="modal" data-target="#select-distinct-modal">
+                                    add to cart
+                                </button>
+                                <span class="product__ingredients-show">
+                                    ingredients
+                                </span>
+                                <span class="product__ingredients-close d-none"> 
+                                    close
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 product">
+                            <div class="product__overlay">
+                                <h4 class="product__title">
+                                    onion roll
+                                </h4>
+                                <h5 class="product__subtitle">
+                                    with new style
+                                </h5>
+                                <span class="d-block product__price">
+                                    10.00
+                                </span>
+                                <div class="content__section-title-holder">
+                                    <h3 class="content__section-title content__section-title--product">
+                                        ingredients
+                                    </h3>
+                                </div>
+                                <p class="product__text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                </p>
+                                <ul class="product__ingredients">
+                                    <li class="clearfix">
+                                        <span class="d-inline-block float-left">
+                                            Calories
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            185 kcal
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Carbohydrate
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            1.1 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Protein 
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            0.5 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Fat
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            0.3 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Fibre
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                             0 g
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="product__inner">
+                                <img src="uploads/green-dragon-1.png" class="product__image" alt="sushi">
+                                <h4 class="product__title">
+                                    green dragon
+                                </h4>
+                                <h5 class="product__subtitle">
+                                    with new style
+                                </h5>
+                                <span class="d-block product__price">
+                                    10.00
+                                </span>
+                                <button class="btn btn--default btn--products">
+                                    add to cart
+                                </button>
+                                <span class="product__ingredients-show">
+                                    ingredients
+                                </span>
+                                <span class="product__ingredients-close d-none"> 
+                                    close
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 product">
+                            <div class="product__overlay">
+                                <h4 class="product__title">
+                                    onion roll
+                                </h4>
+                                <h5 class="product__subtitle">
+                                    with new style
+                                </h5>
+                                <span class="d-block product__price">
+                                    10.00
+                                </span>
+                                <div class="content__section-title-holder">
+                                    <h3 class="content__section-title content__section-title--product">
+                                        ingredients
+                                    </h3>
+                                </div>
+                                <p class="product__text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                </p>
+                                <ul class="product__ingredients">
+                                    <li class="clearfix">
+                                        <span class="d-inline-block float-left">
+                                            Calories
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            185 kcal
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Carbohydrate
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            1.1 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Protein 
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            0.5 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Fat
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            0.3 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Fibre
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                             0 g
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="product__inner">
+                                <img src="uploads/green-dragon-1.png" class="product__image" alt="sushi">
+                                <h4 class="product__title">
+                                    green dragon
+                                </h4>
+                                <h5 class="product__subtitle">
+                                    with new style
+                                </h5>
+                                <span class="d-block product__price">
+                                    10.00
+                                </span>
+                                <button class="btn btn--default btn--products">
+                                    add to cart
+                                </button>
+                                <span class="product__ingredients-show">
+                                    ingredients
+                                </span>
+                                <span class="product__ingredients-close d-none"> 
+                                    close
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 product">
+                            <div class="product__overlay">
+                                <h4 class="product__title">
+                                    onion roll
+                                </h4>
+                                <h5 class="product__subtitle">
+                                    with new style
+                                </h5>
+                                <span class="d-block product__price">
+                                    10.00
+                                </span>
+                                <div class="content__section-title-holder">
+                                    <h3 class="content__section-title content__section-title--product">
+                                        ingredients
+                                    </h3>
+                                </div>
+                                <p class="product__text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                </p>
+                                <ul class="product__ingredients">
+                                    <li class="clearfix">
+                                        <span class="d-inline-block float-left">
+                                            Calories
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            185 kcal
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Carbohydrate
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            1.1 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Protein 
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            0.5 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Fat
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            0.3 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Fibre
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                             0 g
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="product__inner">
+                                <img src="uploads/green-dragon-1.png" class="product__image" alt="sushi">
+                                <h4 class="product__title">
+                                    green dragon
+                                </h4>
+                                <h5 class="product__subtitle">
+                                    with new style
+                                </h5>
+                                <span class="d-block product__price">
+                                    10.00
+                                </span>
+                                <button class="btn btn--default btn--products">
+                                    add to cart
+                                </button>
+                                <span class="product__ingredients-show">
+                                    ingredients
+                                </span>
+                                <span class="product__ingredients-close d-none"> 
+                                    close
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 product">
+                            <div class="product__overlay">
+                                <h4 class="product__title">
+                                    onion roll
+                                </h4>
+                                <h5 class="product__subtitle">
+                                    with new style
+                                </h5>
+                                <span class="d-block product__price">
+                                    10.00
+                                </span>
+                                <div class="content__section-title-holder">
+                                    <h3 class="content__section-title content__section-title--product">
+                                        ingredients
+                                    </h3>
+                                </div>
+                                <p class="product__text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                </p>
+                                <ul class="product__ingredients">
+                                    <li class="clearfix">
+                                        <span class="d-inline-block float-left">
+                                            Calories
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            185 kcal
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Carbohydrate
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            1.1 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Protein 
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            0.5 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Fat
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            0.3 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Fibre
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                             0 g
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="product__inner">
+                                <img src="uploads/green-dragon-1.png" class="product__image" alt="sushi">
+                                <h4 class="product__title">
+                                    green dragon
+                                </h4>
+                                <h5 class="product__subtitle">
+                                    with new style
+                                </h5>
+                                <span class="d-block product__price">
+                                    10.00
+                                </span>
+                                <button class="btn btn--default btn--products">
+                                    add to cart
+                                </button>
+                                <span class="product__ingredients-show">
+                                    ingredients
+                                </span>
+                                <span class="product__ingredients-close d-none"> 
+                                    close
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 product">
+                            <div class="product__overlay">
+                                <h4 class="product__title">
+                                    onion roll
+                                </h4>
+                                <h5 class="product__subtitle">
+                                    with new style
+                                </h5>
+                                <span class="d-block product__price">
+                                    10.00
+                                </span>
+                                <div class="content__section-title-holder">
+                                    <h3 class="content__section-title content__section-title--product">
+                                        ingredients
+                                    </h3>
+                                </div>
+                                <p class="product__text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                </p>
+                                <ul class="product__ingredients">
+                                    <li class="clearfix">
+                                        <span class="d-inline-block float-left">
+                                            Calories
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            185 kcal
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Carbohydrate
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            1.1 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Protein 
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            0.5 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Fat
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            0.3 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Fibre
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                             0 g
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="product__inner">
+                                <img src="uploads/green-dragon-1.png" class="product__image" alt="sushi">
+                                <h4 class="product__title">
+                                    green dragon
+                                </h4>
+                                <h5 class="product__subtitle">
+                                    with new style
+                                </h5>
+                                <span class="d-block product__price">
+                                    10.00
+                                </span>
+                                <button class="btn btn--default btn--products">
+                                    add to cart
+                                </button>
+                                <span class="product__ingredients-show">
+                                    ingredients
+                                </span>
+                                <span class="product__ingredients-close d-none"> 
+                                    close
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="content__section" id="section-noodles">
+                <div class="container text-center">
+                    <div class="content__section-title-holder">
+                        <h3 class="content__section-title">
+                            noodles
+                        </h3>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-md-6 col-lg-4 product">
+                            <div class="product__overlay">
+                                <h4 class="product__title">
+                                    onion roll
+                                </h4>
+                                <h5 class="product__subtitle">
+                                    with new style
+                                </h5>
+                                <span class="d-block product__price">
+                                    10.00
+                                </span>
+                                <div class="content__section-title-holder">
+                                    <h3 class="content__section-title content__section-title--product">
+                                        ingredients
+                                    </h3>
+                                </div>
+                                <p class="product__text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                </p>
+                                <ul class="product__ingredients">
+                                    <li class="clearfix">
+                                        <span class="d-inline-block float-left">
+                                            Calories
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            185 kcal
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Carbohydrate
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            1.1 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Protein 
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            0.5 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Fat
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            0.3 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Fibre
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                             0 g
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="product__inner">
+                                <img src="uploads/noodles-products-1.png" class="product__image" alt="sushi">
+                                <h4 class="product__title">
+                                    green dragon
+                                </h4>
+                                <h5 class="product__subtitle">
+                                    with new style
+                                </h5>
+                                <span class="d-block product__price">
+                                    10.00
+                                </span>
+                                <button class="btn btn--default btn--products">
+                                    add to cart
+                                </button>
+                                <span class="product__ingredients-show">
+                                    ingredients
+                                </span>
+                                <span class="product__ingredients-close d-none"> 
+                                    close
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 product">
+                            <div class="product__overlay">
+                                <h4 class="product__title">
+                                    onion roll
+                                </h4>
+                                <h5 class="product__subtitle">
+                                    with new style
+                                </h5>
+                                <span class="d-block product__price">
+                                    10.00
+                                </span>
+                                <div class="content__section-title-holder">
+                                    <h3 class="content__section-title content__section-title--product">
+                                        ingredients
+                                    </h3>
+                                </div>
+                                <p class="product__text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                </p>
+                                <ul class="product__ingredients">
+                                    <li class="clearfix">
+                                        <span class="d-inline-block float-left">
+                                            Calories
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            185 kcal
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Carbohydrate
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            1.1 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Protein 
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            0.5 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Fat
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            0.3 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Fibre
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                             0 g
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="product__inner">
+                                <img src="uploads/noodles-products-1.png" class="product__image" alt="sushi">
+                                <h4 class="product__title">
+                                    green dragon
+                                </h4>
+                                <h5 class="product__subtitle">
+                                    with new style
+                                </h5>
+                                <span class="d-block product__price">
+                                    10.00
+                                </span>
+                                <button class="btn btn--default btn--products">
+                                    add to cart
+                                </button>
+                                <span class="product__ingredients-show">
+                                    ingredients
+                                </span>
+                                <span class="product__ingredients-close d-none"> 
+                                    close
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 product">
+                            <div class="product__overlay">
+                                <h4 class="product__title">
+                                    onion roll
+                                </h4>
+                                <h5 class="product__subtitle">
+                                    with new style
+                                </h5>
+                                <span class="d-block product__price">
+                                    10.00
+                                </span>
+                                <div class="content__section-title-holder">
+                                    <h3 class="content__section-title content__section-title--product">
+                                        ingredients
+                                    </h3>
+                                </div>
+                                <p class="product__text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                </p>
+                                <ul class="product__ingredients">
+                                    <li class="clearfix">
+                                        <span class="d-inline-block float-left">
+                                            Calories
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            185 kcal
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Carbohydrate
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            1.1 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Protein 
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            0.5 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Fat
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            0.3 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Fibre
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                             0 g
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="product__inner">
+                                <img src="uploads/noodles-products-1.png" class="product__image" alt="sushi">
+                                <h4 class="product__title">
+                                    green dragon
+                                </h4>
+                                <h5 class="product__subtitle">
+                                    with new style
+                                </h5>
+                                <span class="d-block product__price">
+                                    10.00
+                                </span>
+                                <button class="btn btn--default btn--products">
+                                    add to cart
+                                </button>
+                                <span class="product__ingredients-show">
+                                    ingredients
+                                </span>
+                                <span class="product__ingredients-close d-none"> 
+                                    close
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 product">
+                            <div class="product__overlay">
+                                <h4 class="product__title">
+                                    onion roll
+                                </h4>
+                                <h5 class="product__subtitle">
+                                    with new style
+                                </h5>
+                                <span class="d-block product__price">
+                                    10.00
+                                </span>
+                                <div class="content__section-title-holder">
+                                    <h3 class="content__section-title content__section-title--product">
+                                        ingredients
+                                    </h3>
+                                </div>
+                                <p class="product__text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                </p>
+                                <ul class="product__ingredients">
+                                    <li class="clearfix">
+                                        <span class="d-inline-block float-left">
+                                            Calories
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            185 kcal
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Carbohydrate
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            1.1 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Protein 
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            0.5 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Fat
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            0.3 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Fibre
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                             0 g
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="product__inner">
+                                <img src="uploads/noodles-products-1.png" class="product__image" alt="sushi">
+                                <h4 class="product__title">
+                                    green dragon
+                                </h4>
+                                <h5 class="product__subtitle">
+                                    with new style
+                                </h5>
+                                <span class="d-block product__price">
+                                    10.00
+                                </span>
+                                <button class="btn btn--default btn--products">
+                                    add to cart
+                                </button>
+                                <span class="product__ingredients-show">
+                                    ingredients
+                                </span>
+                                <span class="product__ingredients-close d-none"> 
+                                    close
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 product">
+                            <div class="product__overlay">
+                                <h4 class="product__title">
+                                    onion roll
+                                </h4>
+                                <h5 class="product__subtitle">
+                                    with new style
+                                </h5>
+                                <span class="d-block product__price">
+                                    10.00
+                                </span>
+                                <div class="content__section-title-holder">
+                                    <h3 class="content__section-title content__section-title--product">
+                                        ingredients
+                                    </h3>
+                                </div>
+                                <p class="product__text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                </p>
+                                <ul class="product__ingredients">
+                                    <li class="clearfix">
+                                        <span class="d-inline-block float-left">
+                                            Calories
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            185 kcal
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Carbohydrate
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            1.1 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Protein 
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            0.5 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Fat
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            0.3 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Fibre
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                             0 g
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="product__inner">
+                                <img src="uploads/noodles-products-1.png" class="product__image" alt="sushi">
+                                <h4 class="product__title">
+                                    green dragon
+                                </h4>
+                                <h5 class="product__subtitle">
+                                    with new style
+                                </h5>
+                                <span class="d-block product__price">
+                                    10.00
+                                </span>
+                                <button class="btn btn--default btn--products">
+                                    add to cart
+                                </button>
+                                <span class="product__ingredients-show">
+                                    ingredients
+                                </span>
+                                <span class="product__ingredients-close d-none"> 
+                                    close
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 product">
+                            <div class="product__overlay">
+                                <h4 class="product__title">
+                                    onion roll
+                                </h4>
+                                <h5 class="product__subtitle">
+                                    with new style
+                                </h5>
+                                <span class="d-block product__price">
+                                    10.00
+                                </span>
+                                <div class="content__section-title-holder">
+                                    <h3 class="content__section-title content__section-title--product">
+                                        ingredients
+                                    </h3>
+                                </div>
+                                <p class="product__text">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                </p>
+                                <ul class="product__ingredients">
+                                    <li class="clearfix">
+                                        <span class="d-inline-block float-left">
+                                            Calories
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            185 kcal
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Carbohydrate
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            1.1 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Protein 
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            0.5 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Fat
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                            0.3 g
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="d-inline-block float-left">
+                                            Fibre
+                                        </span>
+                                        <span class="d-inline-block"> - </span>
+                                        <span class="d-inline-block float-right">
+                                             0 g
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="product__inner">
+                                <img src="uploads/noodles-products-1.png" class="product__image" alt="sushi">
+                                <h4 class="product__title">
+                                    green dragon
+                                </h4>
+                                <h5 class="product__subtitle">
+                                    with new style
+                                </h5>
+                                <span class="d-block product__price">
+                                    10.00
+                                </span>
+                                <button class="btn btn--default btn--products">
+                                    add to cart
+                                </button>
+                                <span class="product__ingredients-show">
+                                    ingredients
+                                </span>
+                                <span class="product__ingredients-close d-none"> 
+                                    close
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="site__footer">
+        <div class="footer">
+            <div class="container text-center clearfix">
+                <div class="footer__logo text-center clearfix">
+                    <img src="images/logo.svg" height="45px" width="125px" alt="wokin logo" class="d-none d-lg-inline-block">
+                    <img src="images/white-wokin-logo.png" alt="wokin logo" class="d-lg-none d-inline-block">
+                </div>
+                <div class="footer__menu-control d-lg-none d-inline-block">
+                    <img src="images/bars-menu-white.png" alt="menu" class="footer__toggle-menu">
+                    <img src="images/close-footer-menu.png" alt="close" class="d-none footer__close-menu">
+                </div>
+                <div class="footer__close-menu d-lg-none">
+
+                </div>
+                <nav class="menu menu--footer d-none d-lg-block">
+                    <a href="#sushi" class="menu__item">sushi</a>
+                    <a href="#noodles" class="menu__item">noodles</a>
+                    <a href="#soups" class="menu__item">soups</a>
+                    <a href="#drinks" class="menu__item">drinks</a>
+                </nav>
+                <nav class="menu menu--footer-submenu d-none d-lg-block">
+                    <a href="#" class="menu__item">About</a>
+                    <a href="#" class="menu__item">Contact</a>
+                    <a href="#" class="menu__item">Career</a>
+                    <a href="#" class="menu__item">Delivery</a>
+                    <a href="#" class="menu__item">Privacy</a>
+                </nav>
+                <p class="footer__text-holder d-none d-lg-block">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                </p>
+                <div class="footer__bottom">
+                    <div class="row align-items-center text-center">
+                        <div class="col-4 text-left d-none d-lg-block">&copy; 2018 Wokin. All rights reserved</div>
+                        <div class="col-lg-4 col-md-6">
+                            <ul class="footer__social text-lg-center text-md-left">
+                                <li>
+                                    <a href="#">
+                                        <img src="images/facebook.png" alt="facebook">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/instagram.png" alt="instagram">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="images/google-plus.png" alt="google plus">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-6 footer__mobility-holder text-lg-center text-md-right">
+                            <img src="images/mobility.svg" alt="mobility" width="100px" height="15px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--Plugins-->
+    <script src="plugins/mdl/material.min.js"></script>
+    <script src="plugins/jquery/jquery-3.3.1.min.js"></script>
+    <script src="plugins/bootstrap-4.0.0/assets/js/vendor/popper.min.js"></script>
+    <script src="plugins/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+    <script src="plugins/malihu-custom-scrollbar-plugin-master/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="plugins/bootstrap-select/dist/js/bootstrap-select.js"></script>
+    <script src="plugins/OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
+    <script src="plugins/mdl-select/getmdl-select.min.js"></script>
+    <!--Custom Scripts-->
+    <script src="minJs/default.min.js"></script>
+    <script src="js/owlHomePage.js"></script>
+</body>
+
+</html>
